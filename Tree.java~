@@ -1,0 +1,17 @@
+public class Tree
+{
+  private BSTNode root;
+  
+  public Tree()
+  {
+    root = null;
+  }
+  public boolean isEmpty()
+  {
+    return node==null;
+  }
+  public void setRoot(int data)
+  {
+    root = new BSTNode(data);
+  }
+  
