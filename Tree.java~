@@ -1,6 +1,6 @@
 public class Tree
 {
-  private BSTNode root;
+  private Node4 root;
   
   public Tree()
   {
@@ -10,8 +10,26 @@ public class Tree
   {
     return node==null;
   }
-  public void setRoot(int data)
+
+   public void setRoot(int data)
   {
-    root = new BSTNode(data);
+    root = new Node4(data);
+  }
+  public Node4 getRoot()
+  {
+    return root;
+  }
+  public void insert(Node4 node, int data)
+  {
+    
+  }
+  public void print(Node4 r)
+  {
+    if (r!=null)
+    {
+      print(r.left);
+      System.out.println(r.data+ ", " );
+      print(r.right);
+    }
   }
   
